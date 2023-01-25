@@ -14,3 +14,21 @@
 // Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 // Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 // Buon lavoro e buon divertimento! : faccia_leggermente_sorridente:
+
+
+// Scrivi un programma che stampi in console i numeri da 1 a 100,
+// creare elementi che si stampino da 1 a 100 in console 
+
+// fare un <ul> in cui andranno i <li> con i n/buzz/frizzbazz
+const listEl = document.getElementById("unList");
+console.log(listEl);
+
+// ciclo per stampare e aggiungere <li> numerati da 0a100 in console:
+for (let i = 0; i <= 100; i++) {
+    const listItems = document.createElement('li');
+    console.log(listItems + i);
+    listItems.innerHTML = i;
+    listEl.append(listItems);
+    // aggiungere i numeri da0a100 in pagina dandogli la classe box;
+    listItems.classList.add("box");
+}
