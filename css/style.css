@@ -1,11 +1,37 @@
+h1 {
+    font-size: 60px;
+}
+
 .box {
     height: 100px;
     width: 100px;
     background-color: gray;
-    margin: 20px;
+    margin: 10px;
+
+    background-color: rgb(44, 44, 169);
+    color: white;
+}
+
+/* multimipli di 3 e 5 */
+.box-2 {
+    background-color: rgb(190, 190, 17);
+}
+
+/* multipli solo di 3 */
+.box-3 {
+    background-color: green;
+}
+
+/* multipli solo di 5 */
+.box-4 {
+    background-color: red;
 }
 
 li {
     list-style: none;
-    /* margin: 20px; */
+    font-size: 20px;
+}
+
+.sky {
+    background-color: rgb(132, 198, 236);
 }

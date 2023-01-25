@@ -24,11 +24,36 @@ const listEl = document.getElementById("unList");
 console.log(listEl);
 
 // ciclo per stampare e aggiungere <li> numerati da 0a100 in console:
-for (let i = 0; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
     const listItems = document.createElement('li');
     console.log(listItems + i);
     listItems.innerHTML = i;
     listEl.append(listItems);
-    // aggiungere i numeri da0a100 in pagina dandogli la classe box;
     listItems.classList.add("box");
+    // aggiungere i numeri da0a100 in pagina dandogli la classe box;
+
+    // SE i n sono multipli di 3 e 5 yellow
+    if (i % 3 == 0 && i % 5 == 0) {
+        listItems.classList.add("box-2");
+        listItems.innerHTML = "FIZZBIZZ";
+        console.log(listItems + i + " FIZZBIZZ");
+    }
+    // ALTRIMENTI SE i n sono multipli di 5 red
+    else if (i % 5 == 0) {
+        listItems.classList.add("box-4");
+        listItems.innerHTML = "BIZZ";
+        console.log(listItems + i + " BIZZ");
+    }
+    // ALTRIMENTI SE i n sono multipli di 3 green 
+    else if (i % 3 == 0) {
+        listItems.classList.add("box-3");
+        listItems.innerHTML = "FIZZ";
+        console.log(listItems + i + " FIZZ");
+    }
+    // ALTRIMENTI blue
+    else {
+        listItems.classList.add("box");
+    }
+
+
 }
